@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class DrumbeatsOfTheFestival {
+    static void printBeats(int n, int i) {
+        if (i > n) return;
+        System.out.print(i + " ");
+        printBeats(n, i + 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        printBeats(n, 1);
+    }
+}
